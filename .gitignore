@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However
@@ -6,3 +7,12 @@
 #
 # Pods/
 
+=======
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+.idea
+>>>>>>> 238b1a9aaa34e6ef98c6aaa0418c24c0c19dd2e3
