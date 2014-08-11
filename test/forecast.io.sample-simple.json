@@ -1,0 +1,26 @@
+{
+	"url" : "https://api.forecast.io/forecast/bf8c70bf3166728ce9a41fec8aa3bbfb/37.8267,-122.423?units=si&exclude=minutely,alerts,daily,hourly,flags"
+    "currently": {
+        "apparentTemperature": 17.309999999999999,
+        "cloudCover": 0.33000000000000002,
+        "dewPoint": 11.74,
+        "humidity": 0.69999999999999996,
+        "icon": "partly-cloudy-day",
+        "nearestStormBearing": 56,
+        "nearestStormDistance": 16,
+        "ozone": 325.68000000000001,
+        "precipIntensity": 0,
+        "precipProbability": 0,
+        "pressure": 1015.05,
+        "summary": "Partly Cloudy",
+        "temperature": 17.309999999999999,
+        "time": 1407705840,
+        "visibility": 15.289999999999999,
+        "windBearing": 248,
+        "windSpeed": 3.9199999999999999
+    },
+    "latitude": 37.826700000000002,
+    "longitude": -122.423,
+    "offset": -7,
+    "timezone": "America/Los_Angeles"
+}
