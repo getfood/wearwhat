@@ -11,6 +11,6 @@ angular.module('wearWhat', [
 	]).
 config(['$routeProvider', '$httpProvider', function($routeProvider,$httpProvider) {
 	$routeProvider.when('/default', {templateUrl: 'partials/default.html', controller: 'Default'});
-	$routeProvider.when('/weather', {templateUrl: 'partials/weather.html', controller: 'Weather'});
+	$routeProvider.when('/weartorun', {templateUrl: 'partials/weather.html', controller: 'WearToRun'});
 	$routeProvider.otherwise({redirectTo: '/default'});
 }]);
