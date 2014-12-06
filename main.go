@@ -13,9 +13,14 @@ import (
 )
 
 func init() {
-	http.Handle("/robots.txt", http.StripPrefix("/", http.FileServer(http.Dir("app"))))
-	http.Handle("/app/", http.StripPrefix("/app/", http.FileServer(http.Dir("app"))))
+	http.Handle("/robots.txt", http.StripPrefix("/", http.FileServer(http.Dir("www"))))
+	http.Handle("/www/", http.StripPrefix("/www/", http.FileServer(http.Dir("www"))))
+	http.Handle("/img/", http.FileServer(http.Dir("www")))
+	http.Handle("/css/", http.FileServer(http.Dir("www")))
+	http.Handle("/js/", http.FileServer(http.Dir("www")))
+	http.Handle("/m/", http.StripPrefix("/www/", http.FileServer(http.Dir("www"))))
 	http.HandleFunc("/weather/", ForecastHandler)
+	http.Handle("/", http.FileServer(http.Dir("www")))
 }
 
 type ForecastResponseData struct {
