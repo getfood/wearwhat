@@ -1,0 +1,28 @@
+<ion-view title="Page">
+  <ion-content padding="true" class="has-header">
+    <div class="list card">
+      <div class="item item-divider">Weather Now</div>
+      <div class="pure-g" width="100%">
+        <div class="item item-body pure-1-2">
+          <img src="/img/{{(weather.currently.summary || 'loading')}}.png">
+        </div>
+        <div class="item item-body pure-1-2">{{weather.currently.summary}} {{weather.currently.apparentTemperature}}</div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Wardobles</div>
+      <div class="item item-body">
+        <ion-list>
+          <ion-item>CAP</ion-item>
+          <ion-item>Tshirt</ion-item>
+          <ion-item>Short</ion-item>
+        </ion-list>
+      </div>
+    </div>
+    <div class="button-bar">
+      <a href="#/m" class="button button-stable button-block">Home</a>
+      <a href="#/login" class="button button-stable button-block">Login</a>
+      <a href="#/about" class="button button-stable button-block">About</a>
+    </div>
+  </ion-content>
+</ion-view>
